@@ -67,46 +67,55 @@ Four ready-made color themes for the launcher, switchable at any time from the s
 </tr>
 </table>
 
-## 🎥 Demos
+#👇🎥 Demos 👇
 
-| | |
-|---|---|
-| **Resize Preview**<br>
-
-![Resize Preview](Gif/E1.gif)
-
-<br><sub>Live preview while resizing the thumbnails slider.</sub> | **Lister (Opus) Tab Switch + Virtual Desktop**<br>
-
-![Tab Switch](Gif/E2.gif)
-
-<br><sub>Switching between Opus lister tabs alongside virtual desktops.</sub> |
-| **Minimize / Restore / Cycle Listers**<br>
-
-![Cycle Listers](Gif/E3.gif)
-
-<br><sub>Minimize, restore, and cycle through all open Opus listers.</sub> | **App Switch + Explorer Switch**<br>
-
-![App Switch](Gif/E4.gif)
-
-<br><sub>Quickly switch between running apps and Explorer windows.</sub> |
-| **Slider in Action**<br>
-
-![Slider](Gif/E5.gif)
-
-<br><sub>The thumbnails slider being used to browse files visually.</sub> | **Pattern Select + Backtrack + History**<br>
-
-![Pattern Select](Gif/E6.gif)
-
-<br><sub>Selecting by pattern, restoring a backtrack, and using the history GUI.</sub> |
+<table>
+<tr>
+<td align="center">
+<b>Resize Preview</b><br>
+<img src="Gif/E1.gif" width="320"><br>
+<sub>Live preview while resizing the thumbnails slider.</sub>
+</td>
+<td align="center">
+<b>Lister (Opus) Tab Switch + Virtual Desktop</b><br>
+<img src="Gif/E2.gif" width="320"><br>
+<sub>Switching between Opus lister tabs alongside virtual desktops.</sub>
+</td>
+</tr>
+<tr>
+<td align="center">
+<b>Minimize / Restore / Cycle Listers</b><br>
+<img src="Gif/E3.gif" width="320"><br>
+<sub>Minimize, restore, and cycle through all open Opus listers.</sub>
+</td>
+<td align="center">
+<b>App Switch + Explorer Switch</b><br>
+<img src="Gif/E4.gif" width="320"><br>
+<sub>Quickly switch between running apps and Explorer windows.</sub>
+</td>
+</tr>
+<tr>
+<td align="center">
+<b>Slider in Action</b><br>
+<img src="Gif/E5.gif" width="320"><br>
+<sub>The thumbnails slider being used to browse files visually.</sub>
+</td>
+<td align="center">
+<b>Pattern Select + Backtrack + History</b><br>
+<img src="Gif/E6.gif" width="320"><br>
+<sub>Selecting by pattern, restoring a backtrack, and using the history GUI.</sub>
+</td>
+</tr>
+</table>
 
 **Help Reference:**
+
 
 
 ![Help](Gif/E7.gif)
 
 
 *How to access the built-in help panel.*
-
 ___
 ## Icons
 
