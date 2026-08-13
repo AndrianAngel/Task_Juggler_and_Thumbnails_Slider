@@ -67,7 +67,7 @@ Four ready-made color themes for the launcher, switchable at any time from the s
 </tr>
 </table>
 
-#👇🎥 Demos 👇
+# 🎥 Demos 👇
 
 <table>
 <tr>
