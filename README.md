@@ -206,7 +206,6 @@ Items with a virtual desktop location also show a short desktop tag (e.g. `D1`, 
 ## ✔️ Enable Only What You Need
 
 Every major feature — favorite folders, Explorer window listing, app listing, Opus tab listing, status bar, virtual desktop switching, and more — has its own checkbox in the Settings panel. Nothing is forced on: disable the modules you don't use and keep only the features that fit your workflow.
-```
 ___
 
 ## 🎯 Quick Jump vs. Reactivate Mode
