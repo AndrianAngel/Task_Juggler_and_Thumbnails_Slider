@@ -107,6 +107,98 @@ Four ready-made color themes for the launcher, switchable at any time from the s
 
 *How to access the built-in help panel.*
 
+___
+## Icons
+
+All icons shown in the demos and screenshots are included in **`ICO.zip`**. They are not applied automatically — after extracting the archive, you'll need to manually assign each icon to its corresponding entry (favorite folder, app, folder type, etc.) from the Settings panel to match the look shown in this repo.
+
+## Favorite Folders — Syntax
+
+Favorite folders are listed one per line in the **Favorites Folders** tab. Each line supports an optional custom name and display modifiers.
+
+```
+PATH
+PATH|Custom Name
+PATH|Custom Name/B
+PATH|Custom Name/HEXCOLOR
+//PATH|Disabled Entry
+```
+
+- `PATH` — the folder path (required)
+- `|Custom Name` — optional display name instead of the raw path
+- `/B` — makes the entry bold
+- `/HEXCOLOR` — sets a custom text color (e.g. `/FF6B6B`), can be combined with `/B` in any order
+- `//` at the start of a line disables/hides that entry without deleting it
+
+**Examples:**
+```
+
+C:\Projects
+C:\Users\Me\Documents|My Documents
+D:\Media|Media Library/FF6B6B
+C:\Work\Reports|Reports/B
+//C:\Archive|Old Archive (temporarily disabled)
+```
+
+## Pattern Selection — Syntax
+
+The pattern selector (opened from the pattern dialog) supports several matching modes, entered as a single string.
+
+| Syntax | Behavior |
+|---|---|
+| `ext1,ext2,ext3` | Select all files matching these extensions |
+| `/name` | Select items whose name contains "name" |
+| `/^name` | Select items whose name **starts with** "name" |
+| `/name$` | Select items whose name **ends with** "name" |
+| `/name1/name2` | Select items matching **any** of multiple names |
+| `/name:ext1,ext2` or `name:ext1,ext2` | Select items matching a name **and** extension filter |
+| `re:pattern` | Select items using a full regex pattern |
+| `/F` (appended flag) | Include folders in the results |
+
+**Examples:**
+```
+
+avi,mp4,mkv          → all video files
+/report              → items containing "report"
+/^intro               → items starting with "intro"
+/outro$               → items ending with "outro"
+/movie/show:mp4,mkv   → "movie" or "show" items with mp4/mkv extension
+re:^\d{4}-\d{2}-\d{2} → regex match (e.g. date-prefixed files)
+avi,mp4/F             → video files, folders included
+```
+
+## Active Tab Indicator & Indentation
+
+Found under **Settings → Extra tab**. This controls how the currently active Lister tab is visually marked in the launcher list.
+
+- **Indicator** — the symbol shown next to the active tab (default: `▶`)
+- **Indent** — how many spaces to add before the indicator, from 0 to 20
+
+The same principle applies to the **Virtual Desktop indicator**, configured in the VD section: a symbol (default: `◆`) with its own adjustable indent, used to mark the currently active desktop in the list.
+
+## Virtual Desktop Switching & Auto-Jump
+
+Each virtual desktop appears as its own entry in the launcher, letting you switch desktops with a single click. You can also add or remove virtual desktops directly from the same panel.
+
+When **Quick Jump** is enabled (Settings), clicking a folder, app, or Lister tab that lives on a different virtual desktop will automatically switch you to the correct desktop before activating that window — no manual desktop switching needed.
+
+## Status Bar
+
+The status bar at the bottom of the launcher gives a live summary of what's currently listed:
+
+- **FAV** — number of favorite folders
+- **EXP** — number of open Explorer windows
+- **APP** — number of tracked running apps
+- **TAB** — number of Opus Lister tabs
+- **LIS** — number of open Listers
+
+Items with a virtual desktop location also show a short desktop tag (e.g. `D1`, `D2`) at the right edge, indicating which virtual desktop that item currently lives on.
+
+## Enable Only What You Need
+
+Every major feature — favorite folders, Explorer window listing, app listing, Opus tab listing, status bar, virtual desktop switching, and more — has its own checkbox in the Settings panel. Nothing is forced on: disable the modules you don't use and keep only the features that fit your workflow.
+```
+
 ## 🔥 Downloads
 
 - `Task_Juggler_and_Thumbnails_Slider_26_08_12_V1.1.7.6_X64.exe` — standalone executable
