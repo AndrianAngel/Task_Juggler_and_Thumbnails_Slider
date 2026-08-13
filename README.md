@@ -117,11 +117,11 @@ Four ready-made color themes for the launcher, switchable at any time from the s
 
 *How to access the built-in help panel.*
 ___
-## Icons
+## ✔️ Icons
 
 All icons shown in the demos and screenshots are included in **`ICO.zip`**. They are not applied automatically — after extracting the archive, you'll need to manually assign each icon to its corresponding entry (favorite folder, app, folder type, etc.) from the Settings panel to match the look shown in this repo.
 
-## Favorite Folders — Syntax
+## ♥️ Favorite Folders — Syntax
 
 Favorite folders are listed one per line in the **Favorites Folders** tab. Each line supports an optional custom name and display modifiers.
 
@@ -139,7 +139,7 @@ PATH|Custom Name/HEXCOLOR
 - `/HEXCOLOR` — sets a custom text color (e.g. `/FF6B6B`), can be combined with `/B` in any order
 - `//` at the start of a line disables/hides that entry without deleting it
 
-**Examples:**
+**👇Examples:**
 ```
 
 C:\Projects
@@ -149,7 +149,7 @@ C:\Work\Reports|Reports/B
 //C:\Archive|Old Archive (temporarily disabled)
 ```
 
-## Pattern Selection — Syntax
+## 🔗 Pattern Selection — Syntax
 
 The pattern selector (opened from the pattern dialog) supports several matching modes, entered as a single string.
 
@@ -164,7 +164,7 @@ The pattern selector (opened from the pattern dialog) supports several matching 
 | `re:pattern` | Select items using a full regex pattern |
 | `/F` (appended flag) | Include folders in the results |
 
-**Examples:**
+**👇Examples:**
 ```
 
 avi,mp4,mkv          → all video files
@@ -176,7 +176,7 @@ re:^\d{4}-\d{2}-\d{2} → regex match (e.g. date-prefixed files)
 avi,mp4/F             → video files, folders included
 ```
 
-## Active Tab Indicator & Indentation
+## 🎨 Active Tab Indicator & Indentation
 
 Found under **Settings → Extra tab**. This controls how the currently active Lister tab is visually marked in the launcher list.
 
@@ -185,13 +185,13 @@ Found under **Settings → Extra tab**. This controls how the currently active L
 
 The same principle applies to the **Virtual Desktop indicator**, configured in the VD section: a symbol (default: `◆`) with its own adjustable indent, used to mark the currently active desktop in the list.
 
-## Virtual Desktop Switching & Auto-Jump
+## 🖥️🖥️ Virtual Desktop Switching & Auto-Jump
 
 Each virtual desktop appears as its own entry in the launcher, letting you switch desktops with a single click. You can also add or remove virtual desktops directly from the same panel.
 
 When **Quick Jump** is enabled (Settings), clicking a folder, app, or Lister tab that lives on a different virtual desktop will automatically switch you to the correct desktop before activating that window — no manual desktop switching needed.
 
-## Status Bar
+## ➕ Status Bar
 
 The status bar at the bottom of the launcher gives a live summary of what's currently listed:
 
@@ -203,10 +203,60 @@ The status bar at the bottom of the launcher gives a live summary of what's curr
 
 Items with a virtual desktop location also show a short desktop tag (e.g. `D1`, `D2`) at the right edge, indicating which virtual desktop that item currently lives on.
 
-## Enable Only What You Need
+## ✔️ Enable Only What You Need
 
 Every major feature — favorite folders, Explorer window listing, app listing, Opus tab listing, status bar, virtual desktop switching, and more — has its own checkbox in the Settings panel. Nothing is forced on: disable the modules you don't use and keep only the features that fit your workflow.
 ```
+___
+
+## 🎯 Quick Jump vs. Reactivate Mode
+
+Found in **Settings**, this toggle controls how the launcher handles items that are already open.
+
+- **🖍️Quick Jump enabled** — clicking a folder, app, or Opus tab that's already open reuses the existing window: it switches to the correct virtual desktop (if needed) and simply brings that window to the front, without opening anything new.
+- **🖊️Quick Jump disabled** — instead of just focusing the window, the launcher fully reactivates it: for Opus tabs it switches to the correct tab inside the Lister, for apps and Explorer windows it restores/reactivates the window before bringing it forward.
+
+In short: Quick Jump is the faster "just show it" mode, while disabling it forces a full reactivate + tab/window switch every time.
+
+## 📂 Default File Manager
+
+The **"Use Current File Manager"** option (Settings → Favorites Folders tab) determines which file manager opens your favorite folders — your current default Explorer replacement (e.g. Explorer itself, Directory Opus, or any other file manager set as default on your system) instead of forcing a specific one.
+
+## ✏️ Custom Virtual Desktop Name
+
+In the **Extra** section of the settings, you can enable **Use Custom Name** and set your own label for virtual desktops instead of the default "Desktop 1, Desktop 2...". For example, setting the name to `Desk` will display desktops as `Desk 1`, `Desk 2`, `Desk 3`, etc.
+
+## 📚 Header Colors
+
+Each category header in the launcher list has its own configurable color, set individually in the Theme tab:
+
+- Favorite Folders header color
+- Explorer Windows header color
+- Application Switcher header color
+- Opus Tabs header color
+- Virtual Desktop header color
+
+## 🔗 Active Item Color & Bold
+
+Each item type can independently show the currently active entry in bold and/or a custom color:
+
+- **Opus Tab** — bold toggle + color for the active tab path
+- **Explorer** — bold toggle + color for the active Explorer window path
+- **Favorite Folder** — bold toggle + color for the active folder
+- **Application** — bold toggle + color for the active app
+- **Virtual Desktop** — bold toggle + color for the currently active desktop
+
+## ⛏️ Virtual Desktop Add / Remove Icons
+
+The icons used for the **Add Virtual Desktop** and **Remove Virtual Desktop** buttons can each be set to a custom icon path in the VD settings, letting you replace the default system icons with your own.
+
+## 📌 Minimized State Indicators
+
+- **Explorer windows & Apps** — a minimized item is marked with a 🔻 symbol before its name. No bold and no custom color are applied to this marker; it stays plain to keep it visually distinct from active/highlighted entries.
+- **Opus Listers** — when a Lister is minimized, its header (e.g. `Lister 1`) is prefixed with the same 🔻 symbol, but unlike Explorer/App entries it's always rendered in **white and bold**, so minimized Listers stand out clearly at a glance.
+
+___
+
 
 ## 🔥 Downloads
 
